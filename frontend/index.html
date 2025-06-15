@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <form id="task-form">
+            <input type="text" id="title" placeholder="Task Title" required />
+            <textarea id="description" placeholder="Task Description" required></textarea>
+            <input type="date" id="date" required />
+            <button type="submit">Add Task</button>
+        </form>
+
+        <div class="sort-controls">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="created">Recently Added</option>
+            </select>
+
+        </div>
+
+        <h2>Your Tasks</h2>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="scriptLocal.js"></script>
+</body>
+
+</html>
